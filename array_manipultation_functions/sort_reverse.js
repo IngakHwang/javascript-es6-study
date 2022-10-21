@@ -2,14 +2,9 @@
 // 오름차순으로 요소 정렬
 
 const fruits = ['Banana', 'Oragne', 'Apple'];
-fruits.sort();          // 오름차순 정렬
-console.log(fruits);    // 원본 배열 직접 변경
-
-/* reverse() */
-const beforeReverseArray = ['d','c','b','a'];
-const afterReverseArray = beforeReverseArray.reverse();
-console.log(afterReverseArray);
-console.log(beforeReverseArray);
+console.log(`sort 전 : ${fruits}`);
+fruits.sort();          
+console.log(`sort 후 : ${fruits}`);
 
 //숫자 정렬
 // sort 의 정렬 순서는 유니코드 코드 포인트의 순서를 따른다.
@@ -27,9 +22,9 @@ const points = [40, 100, 1, 5, 2, 25, 10];
 // 숫자 배열의 오름차순 정렬
 // 비교 함수의 반환값이 0보다 작으면 a를 우선하여 정렬한다.
 points.sort((a,b) => a-b);
-console.log(points);
+console.log(`오름차순 정렬 : ${points}`);
 
 // 슷자 배열의 내림차순 정렬
 // 비교 함수의 반환값이 0보다 작으면 b를 우선하여 정렬한다.
 points.sort((a,b) => b-a);
-console.log(points);
+console.log(`내림차순 정렬 : ${points}`);

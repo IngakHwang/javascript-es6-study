@@ -1,3 +1,5 @@
+/* rest parameter */
+
 function test(a,b, ...rest){
     console.log(a,b);
     console.log(rest);

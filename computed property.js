@@ -1,3 +1,5 @@
+/* computed property name */
+
 const names = "Ingak"
 const age = 28
 

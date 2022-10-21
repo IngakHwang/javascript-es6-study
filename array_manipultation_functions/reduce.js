@@ -14,17 +14,17 @@ const sumWithInitial = beforeReduceArray.reduce(
     },0
 );
 
-console.log(`Reduce 후 : ${sumWithInitial}\n`);
+console.log(`Reduce 배열 값 더하기 : ${sumWithInitial}\n`);
 
 const values = [1,2,3,4,5,6,7,9,8];
 const average = values.reduce((acc, cur, i, {length}) => {
     console.log(`acc = ${acc}, cur = ${cur}, index = ${i}, length = ${length}`)
     return i === length -1 ? (acc + cur) / length : acc + cur;
 },0);
-console.log(`Reduce 평균 값 구하기 : ${average}`);
+console.log(`Reduce 평균 값 구하기 : ${average}\n`);
 
 const max = values.reduce((acc, cur) => {
     console.log(`acc = ${acc}, cur = ${cur}`)
     return acc > cur ? acc : cur
 },0);
-console.log(max);
+console.log(`Reduce 최대 값 구하기 : ${max}`);
