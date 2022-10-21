@@ -12,7 +12,7 @@ console.log(`filter 결과 : ${afterFilterArray}\n`);
 // 반환값이 true인 요소 없으면 undefined 반환
 
 const beforeFindArray = [5, 12, 8, 130, 44];
-const afterFindArray = beforeFindArray.find(element => element > 131);
+const afterFindArray = beforeFindArray.find(element => element > 39);
 console.log(`find 결과 : ${afterFindArray}\n`);
 
 console.log(`fliter 예시 : ` + [1,2,2,3].filter(item => item === 2));

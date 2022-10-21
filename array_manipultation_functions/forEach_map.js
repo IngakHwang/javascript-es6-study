@@ -19,3 +19,13 @@ console.log(`map 반환 값 : ${afterMapArray}`);
 
 // forEach, map 공통점은 자신을 호출한 배열의 모든 요소를 순회하면서 인수로 전달받은 콜백 함수를 반복 호출
 // 다른점은 forEach는 언제나 undefined 반환, map은 콜백함수의 반환값들로 구성된 새로운 배열 반환
+
+const myArr = [1, 2, 3, 4, 5];
+
+const newMyArr = myArr.forEach((currentElement, index, array) => {
+    console.log(`요소: ${currentElement}`);
+    console.log(`index: ${index}`);
+    console.log(array);
+});
+
+console.log(newMyArr); // undefined

@@ -30,3 +30,4 @@ console.log(`before concat2 : ${beforeConcatArray2}`);
 
 const afterConcatArray = beforeConcatArray1.concat(beforeConcatArray2);
 console.log(`after concat : ${afterConcatArray}`);
+
